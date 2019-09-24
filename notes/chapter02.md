@@ -88,7 +88,38 @@ String的常用方法：
     charAt
     indexOf
     substring
+    
+转换功能：
 
+    toCharArray()
+    toLowerCase()
+    toUpperCase()
+
+处理功能：
+
+    trim()
+    split()
+ 
+ 2) StringBuilder
+ 
+ 对于原生String对象，拼接操作非常费时而且占用内存空间，拼接前和拼接后的内存是单独的，还需要被GC回收。
+ 
+ 常用方法：
+    capacity()指容量
+    length()指占用长度
+    
+    append() 添加新字符串
+    reverse()
+    toString() 
+  
+  添加整型之类的数据无需转换，会自动转换。
+  
+  3）StringBuffer
+  
+  StringBuilder不支持多线程，但是速度更快，正常情况下使用StringBuilder，而StringBuffer的速度比较慢，但是支持多线程操作，是线程安全的。
+  
+  方法基本与StringBuilder相同。
+  
 
 
 
