@@ -65,8 +65,48 @@ ArrayList用数组存储元素的，这个数组可以动态创建，如果元�
 
 #### 3.HashSet
 
+集合
+
+增删：
+
+    add
+    
+    remove
+    
+查：
+
+    size()
+    
+    contains()
+    
+    isEmpty()
+
 
 #### 4.HashMap
+
+键值对, JDK1.8 之前 HashMap 由 数组+链表 组成的，数组是 HashMap 的主体，链表则是主要为了解决哈希冲突而存在的（“拉链法”解决冲突）.JDK1.8 以后在解决哈希冲突时有了较大的变化，当链表长度大于阈值（默认为 8）时，将链表转化为红黑树，以减少搜索时间。
+
+装填因子一般维持在0.75以下，否则存在大量碰撞；超过0.75后需要进行rehash操作，非常消耗资源。
+
+
+增删改：
+
+    put(k, v)
+    
+    remove(k)
+    
+    remove(k, v)
+    
+ 查：
+    get(k)
+ 
+    containsKey()
+    
+    containsValue()
+    
+    isEmpty()
+    
+    size()
 
 
 #### 5.
