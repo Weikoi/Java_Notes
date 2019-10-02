@@ -1,3 +1,6 @@
+
+package com.chapter04;
+
 import java.io.FileWriter;
 import java.io.IOException;
 
